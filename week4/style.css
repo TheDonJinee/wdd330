@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+* {
+    font-family: 'Nova Square';
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 89rem;
+    padding: 2rem;
+    margin: 0;
+}
+
+
+.tic-tac{
+    height: 300px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.board{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    font-size: 50px;
+    text-align: center;
+    line-height: 95px;
+    cursor: pointer;
+    user-select: none;
+}
+.board:nth-child(3n){
+    border-right: none;
+}
+.board:nth-child(n+7){
+    border-bottom: none;
+}
+
+.board.winner{
+    background-color: #ece3ad;
+}
+
+#resetButtom{
+    font-size: 1.4rem;
+    width: 100px;
+    padding: 1.1rem 0;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 30px;
+    border: none;
+    color: rgb(60, 57, 63);
+    text-decoration: none;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .show {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            margin-left: 100px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <label> Enter Number
+        <input type="text" id="numVal">
+    </label>
+    <button class="add">+</button>
+    <div class="show"></div>
+    <script>
+        const numRec = document.querySelector('input#numVal');
+        function showEntry(){
+            let newVal = numRec.value;
+            let sum = 0;
+            for(i = 0; i <= newVal; i++) {
+                sum += i
+            }
+            document.querySelector('.show').innerHTML = sum;
+        }
+        document.querySelector('.add').addEventListener('click', showEntry)
+    </script>
+</body>
+</html>

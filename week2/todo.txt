@@ -1,0 +1,20 @@
+1.Create a new html file. Add the code necessary to make it a valid document
+ Add a text input and a button. Put an empty div with an ID below those.
+ Add a script tag, write a function that will read the contents of the input,
+  and write them to the div.
+  
+2.Call the function when the button is pressed.
+ Modify your HTML file:
+ Write a new function that expects a number as an argument. 
+ It should take that number and sum all the numbers up to 
+ the number provided. (ie n=5…so it would do 1+2+3+4+5 = 15) 
+ It should return that value.
+ When the button is pressed it should read the number from the input.
+  Make sure it is a valid number, call the summing 
+  function you just wrote, and output the result to the div.
+
+3.Create an adding machine
+Add an additional input to your HTML file.
+Add a + button.
+Write a function that will take the numbers from each input,
+add them together, and output the result to a div

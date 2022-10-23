@@ -1,0 +1,140 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS ARRAY</title>
+</head>
+<body>
+    <h1>Check the Console... 👉</h1>
+    <script>
+        const fruits = ['Apple', 'Banana']
+        const fruits2 = new Array('Apple', 'Banana')
+        const fruits3 = 'Apple, Banana'.split(', ')
+
+        const fruitsString = fruits.join(' ')
+
+        let firstFruit = fruits[0]
+        let secondFruit = fruits[1]
+        let lastFruit = fruits[fruits3.length - 1]
+        let noOfFruits = fruits.length
+
+        console.log(fruits)
+        console.log(fruits2)
+        console.log(fruits3)
+        console.log(fruitsString)
+        console.log(' ')
+        console.log(firstFruit)
+        console.log(secondFruit)
+        console.log(lastFruit)
+        console.log(noOfFruits)
+        console.log(' ')
+        console.log(fruits3.indexOf('Banana'))
+        console.log(' ')
+        console.log(fruits3.includes('Banana'))
+        console.log(fruits3.includes('Yam'))
+        fruits.push('Mango')
+        fruits.push('Cherry')
+        fruits.push('Strawberry')
+        console.log(fruits)
+        console.log(fruits.length)
+        const removed = fruits.pop(3)
+        console.log('List: ' + fruits)
+        console.log('Removed: ' + removed)
+
+        const fruitList = ['Apple', 'Strawberry', 'Cherry', 'Banana', 'Mango','Tangerine', 'Lemon', 'Guava']
+        console.log(fruitList)
+        const removeFruit = fruitList.splice(-3, 2, 'Yam', 'Cassava')
+        console.log(fruitList)
+        console.log(removeFruit)
+        fruitList.unshift("I'm no Fruit...lol")
+        console.log(fruitList)
+        fruitList.splice(0, 1)
+        console.log(fruitList)
+        for (const fruit of fruitList) {
+            console.log(fruit)
+        };
+        fruitList.forEach((fruit, index, array) => {
+            console.log(fruit, index, array)
+        })
+
+        const mergedList = fruitList.concat(fruits3)
+        console.log(mergedList)
+
+        const copyArray = [...fruitList]
+        console.log('Copied Array')
+        console.log(copyArray)
+        const deepCopy = JSON.parse(JSON.stringify(fruitList))
+        console.log(deepCopy)
+
+        const inventory = [
+        { name: 'asparagus', type: 'vegetables' },
+        { name: 'bananas', type: 'fruit' },
+        { name: 'goat', type: 'meat' },
+        { name: 'cherries', type: 'fruit' },
+        { name: 'fish', type: 'meat' },
+        ]
+
+        console.log('Should have a table below...👇')
+        console.table(inventory)
+        console.log(inventory[1].name)
+       
+        const board = [
+            ['R','N','B','Q','K','B','N','R'],
+            ['P','P','P','P','P','P','P','P'],
+            [' ',' ',' ',' ',' ',' ',' ',' '],
+            [' ',' ',' ',' ',' ',' ',' ',' '],
+            [' ',' ',' ',' ',' ',' ',' ',' '],
+            [' ',' ',' ',' ',' ',' ',' ',' '],
+            ['p','p','p','p','p','p','p','p'],
+            ['r','n','b','q','k','b','n','r'] ];
+
+        const values = []
+        for(let x = 0; x < 10; x++) {
+            values.push([
+                2**x, 2 * x**2
+            ])
+        }
+        console.log(values)
+        console.table(values)
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Ponder: Team Activity Week 2</title>
+ <!--Denis-->
+ <script>
+ function sum_Number(){
+ var numberValue = Number(document.getElementById("addNumber").value)
+ var numberValue2 = Number(document.getElementById("addNumber2").value)
+ var combinedNumber = numberValue+numberValue2
+ // let total = 0, count = 1;
+ // while (count <= combinedNumber) {
+ // total += count;
+ // count += 1;
+ // }
+ localStorage.setItem("sumAll", sumAll)
+ // document.getElementById("sumAll").innerHTML = total
+ document.getElementById("sumAll").innerHTML = combinedNumber
+ } 
+ </script>
+ <!--Denis-->
+</head>
+<!-- BRYCE -->
+ <body>
+ <h1>Calculation</h1>
+ <input id="addNumber" type="number" placeholder="Input a number."></input>
+ <button>+</button>
+ <input id="addNumber2" type="number" placeholder="Input a number."></input>
+ <div id="sumAll"></div>
+ <button onclick="sum_Number()">Display It</button>
+ </section>
+</body>
+<!-- BRYCE -->
+</html>

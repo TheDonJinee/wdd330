@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="heading">
+        <h1>Todos</h1>
+        <div id="error"></div>
+    </header>
+    <main>
+        <div id="taskManger">
+            <ul id="tasks"> </ul>
+            <div class="info">
+                <div id="num-task">0 tasks left</div>
+                <input class="tab" type="button" id="complete" value="Completed">
+                <input class="tab" type="button" id="active" value="Active">
+                <input class="tab selected-tab" type="button" id="all" value="All">
+            </div>
+        </div>
+    </main>
+    <footer id="insertTask">
+        <input type="text" id="getTask" placeholder="Enter Task...">
+        <button type="submit" id="add">+</button>
+    </footer>
+</body>
+<script src="js/main.js" type="module"></script>
+
+</html>
