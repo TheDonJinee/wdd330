@@ -33,8 +33,6 @@ function displayData(data) {
         const temp = data.main.temp;
         const humidity = data.main.humidity;
         const speed = data.wind.speed;
-        // console.log(name, icon, description, temp, speed, humidity)
-        // document.querySelector('.search-bar').value = localStorage.getItem(location);
         document.querySelector('.city').innerText = `Weather in ${name}`;
         document.querySelector('.icon').src = `http://openweathermap.org/img/wn/${icon}.png`;
         document.querySelector('.icon').alt = `${description}`;

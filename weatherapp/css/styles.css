@@ -4,6 +4,7 @@ html {
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -96,22 +97,10 @@ h2 {
     color: aqua;
 }
 
-/* .weather.loading:before {
-    visibility: hidden;
-    content: url(../index.html);
+footer {
+    color: #900;
 }
 
-.weather.loading {
-   visibility: hidden; 
-   max-height: 20px;
-   position: relative;
+footer span {
+    color: rgb(4, 4, 72);
 }
-
-.weather.loading:after {
-    visibility: visible;
-    content: 'Loading...';
-    color: #fff;
-    position: absolute;
-    top: 0;
-    left: 20px;
-} */
