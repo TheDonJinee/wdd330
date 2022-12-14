@@ -1,0 +1,44 @@
+body{
+  display: flex;
+  justify-content: center;
+  flex-direction:column;  
+  align-items: center;
+}
+.errors {
+    border: 1px solid darkred;
+    background-color: lightcoral;
+    padding: 0.5em;
+}
+
+form input {
+    margin: 0.5em 0;
+    font-size: 1.4em;
+    background-color: antiquewhite;
+    width: 300px;
+}
+
+form button {
+    font-size: 1.2em;
+    padding: 0.4em;
+    background-color: cornflowerblue;
+}
+.btn{
+    margin-left: 30%;
+    font-size: 1.4rem;
+    width: 13rem;
+    padding: 1rem 0;
+    border-radius: 3px;
+    text-align: center;
+    color: rgb(236, 230, 230);
+    background: linear-gradient(90deg,rgba(18, 92, 55) 0%, rgb(145, 174, 218) 100%);
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+
+input:invalid {
+    box-shadow: 0 0 5px 1px red;
+}
+
+.hidden {
+    display: none;
+}

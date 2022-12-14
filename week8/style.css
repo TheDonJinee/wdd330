@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+
+
+html{
+    background-color: 	#7e7863;
+    font-family: 'Philosopher', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    margin: auto;
+    /* max-width: 80%; */
+    text-align: center;
+    background-color: #440707;
+    padding-bottom: 3.5vh;
+    max-width: 40vh;
+    padding: 50px;
+}
+
+table {
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #fff;
+}
+td,table#peoplelist{
+    text-align: left;
+}
+
+td {
+    padding: .5rem;
+    font-size: 1.2rem;
+}
+
+th {
+    padding: .5rem;
+    font-size: 1.4rem;
+}
+tr:nth-child(even) {background-color: #ffffff;}
+tr:nth-child(odd) {background-color: #c0c0c0;}
+
+a#prev, a#next{
+    margin-top: 20px;
+    padding: .5rem;
+    border-radius: 10%;
+    background-color: rgb(251, 195, 195);
+    font-size: 1.2rem;
+    color: rgb(61, 7, 7);
+    font-weight: bold;
+}
